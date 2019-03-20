@@ -1,5 +1,5 @@
 $(function(){
-    favoriteMovies().then()
+    favoriteMovies()
   })
   
   function favoriteMovies(){

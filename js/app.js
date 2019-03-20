@@ -12,20 +12,19 @@ function moviesList(){
         let poster = `https://image.tmdb.org/t/p/w500/${element.poster_path}`
         
           $("#moviesList").append(`
-          <div class="col-4">
-            <div class="card">
-              <img class="card-img-top" src="${poster}" alt="Move Poster">
-              <div class="card-body">
-                <h4 class="card-title ">${title}</h4>
-                <p class="card-text">${overview}.</p>
-              <button id="add" class="btn btn-primary" style="margin-left: 10%;" onclick='add("${poster}", "${title}", "${overview}")'><i class="material-icons">favorite</i> Add to My Favorite List</button>
+            <div class="col-4">
+              <div class="card">
+                <img class="card-img-top" src="${poster}" alt="Move Poster">
+                <div class="card-body">
+                  <h4 class="card-title">${title}</h4>
+                  <p class="card-text">${overview}.</p>
+                <button id="add" class="btn btn-primary" style="margin-left: 10%;" onclick='add("${poster}", "${title}", "${overview}")'><i class="material-icons">favorite</i> Add to My Favorite List</button>
+                </div>
               </div>
             </div>
-          </div>
           `)
       })
     })
-  $("#loading").hide()
 }
 
 
@@ -61,7 +60,5 @@ function add(poster, title, overview){
       }, 5000);
     }
   }
-
   )
-
 }
