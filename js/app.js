@@ -12,7 +12,7 @@ function moviesList(){
         let poster = `https://image.tmdb.org/t/p/w500/${element.poster_path}`
         
           $("#moviesList").append(`
-            <div class="col-4">
+            <div class="col-md-4 col-sm-12">
               <div class="card">
                 <img class="card-img-top" src="${poster}" alt="Move Poster">
                 <div class="card-body">

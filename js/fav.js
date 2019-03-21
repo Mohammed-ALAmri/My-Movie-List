@@ -8,7 +8,7 @@ $(function(){
       let changes = res.docChanges()
       changes.forEach(res => {
         $("#favoriteMoviesList").append(`
-        <div class="col-4">
+        <div class="col-md-4 col-sm-12">
             <div class="card">
             <img class="card-img-top" src="${res.doc.data().poster}" alt="Move Poster">
             <div class="card-body">
