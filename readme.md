@@ -3,6 +3,6 @@
 ### Overview
 
 This is My Final Project, It's a simple Movie app where you can add your favorite movies and remove them, 
-I have use Javascript and Firebase .
+I have use HTML, CSS, Javascript, Firebase and The Movie Database (TMDB) API.
 
 ---
